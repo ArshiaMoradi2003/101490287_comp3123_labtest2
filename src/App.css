@@ -1,0 +1,206 @@
+/* src/App.css */
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/clouds-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  sans-serif;
+  color: #fff;
+}
+
+.overlay {
+  width: 90%;
+  max-width: 1100px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.searchBox {
+  display: flex;
+  gap: 8px;
+}
+
+.searchBox input {
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  min-width: 220px;
+}
+
+.searchBox button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  background: #ff7f50;
+  color: #fff;
+}
+
+.searchBox button:hover {
+  opacity: 0.9;
+}
+
+.error-text {
+  color: #ffdddd;
+  margin-bottom: 12px;
+}
+
+/* WRAPPER FOR BOTH CARDS */
+.weather-wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* LEFT CARD */
+.left-card {
+  flex: 0 0 280px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 24px;
+  padding: 24px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.date-text {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.location-text {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.big-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ff7f50;
+  margin-top: 36px;
+}
+
+.big-temp {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.condition-text {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-top: 8px;
+}
+
+/* RIGHT GLASS CARD */
+.right-card {
+  flex: 1;
+  padding: 20px 24px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  color: #fff;
+}
+
+.city-select-row {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.city-select {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* FORECAST STRIP */
+.forecast-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 22px;
+  overflow-x: auto;
+}
+
+.forecast-item {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  padding: 10px 12px;
+  text-align: center;
+  min-width: 70px;
+  font-size: 12px;
+}
+
+.active-forecast {
+  background: rgba(255, 127, 80, 0.9);
+}
+
+.forecast-day {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.forecast-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.forecast-temp {
+  display: block;
+  margin-top: 4px;
+}
+
+/* DETAILS GRID */
+.details-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+  font-size: 13px;
+}
+
+.details-row {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+}
+
+/* Small screens */
+@media (max-width: 800px) {
+  .weather-wrapper {
+    flex-direction: column;
+  }
+
+  .left-card {
+    flex: none;
+  }
+}
