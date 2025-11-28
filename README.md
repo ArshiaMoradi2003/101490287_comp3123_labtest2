@@ -42,6 +42,7 @@ https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=ec317d906e971988
 
 ## Screenshots
 App UI:
-![alt text](image.png)
+<img width="1862" height="1006" alt="image" src="https://github.com/user-attachments/assets/225a576d-232f-4e2e-a342-8406c2010d41" />
+
 Postman:
-![alt text](image-1.png)
+<img width="1381" height="1009" alt="image-1" src="https://github.com/user-attachments/assets/e78cc692-1eb5-462c-a2ba-f1908cca0208" />
